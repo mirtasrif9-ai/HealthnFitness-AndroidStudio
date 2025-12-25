@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".Splash_Screen">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health &amp; Fitness"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="35sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_margin="80dp"
+        android:progressTint="@color/purple_700"
+        android:progressBackgroundTint="#f9f9f9"
+        android:id="@+id/p"/>
+
+
+
+
+</LinearLayout>

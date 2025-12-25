@@ -1,0 +1,38 @@
+package com.example.healthfitness;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+public class WEIGHT_LOSS extends AppCompatActivity {
+
+    int[] newArray;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_weight_loss);
+
+        newArray = new int[]{
+
+                R.id.pose1,R.id.pose2,R.id.pose3,R.id.pose4,R.id.pose5,R.id.pose6,R.id.pose7,R.id.pose8,R.id.pose9,R.id.pose10,
+
+        };
+    }
+
+    public void Imagebuttonclicked(View view) {
+        for (int i = 0; i< newArray.length;i++){
+            if (view.getId() == newArray[i]){
+                int value = i+1;
+                Log.i("FIRST",String.valueOf(value));
+                Intent intent= new Intent(WEIGHT_LOSS.this,third2.class);
+                intent.putExtra("value",String.valueOf(value));
+                startActivity(intent);
+            }
+        }
+    }
+
+}
